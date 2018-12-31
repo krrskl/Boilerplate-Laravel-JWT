@@ -69,6 +69,8 @@ class AuthController extends Controller
     protected function respondWithToken($token)
     {
         return response()->json([
+            'status'=> 'true',
+            'message'=> 'Datos del usuario logueado.',
             'access_token' => $token,
             'token_type' => 'bearer',
             'expires_in' => auth()->factory()->getTTL() * 60,
