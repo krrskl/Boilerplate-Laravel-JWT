@@ -17,7 +17,7 @@ composer update
 
 ---
 
-### **ENDPOINTS PARAMS AND RESPONSE**
+### **PAYLOADS AND RESPONSE OF THE ENDPOINTS**
 
 `Endpoint:` _http://domain.com/api/auth/login_
 
