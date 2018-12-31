@@ -5,6 +5,21 @@
 ```sh
 composer update
 ```
+> configure your .env file
+
+```sh
+php artisan jwt:secret
+```
+```sh
+php artisan key:generate
+```
+```sh
+php artisan migrate --seed
+```
+Run the server
+```sh
+php artisan serve
+```
 
 ---
 
@@ -17,7 +32,7 @@ composer update
 
 ---
 
-### **PAYLOADS AND RESPONSE OF THE ENDPOINTS**
+### **PAYLOAD AND RESPONSE OF THE ENDPOINTS**
 
 `Endpoint:` _http://domain.com/api/auth/login_
 
