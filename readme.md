@@ -1,12 +1,12 @@
 # **BASE API AUTHENTICATION USING LARAVEL 5.7 + JWT**
 
----
-
 ### **INSTALLATION**
 
 ```sh
 composer update
 ```
+
+---
 
 ### **ENDPOINTS OF THE API**
 
@@ -19,7 +19,11 @@ composer update
 
 ### **ENDPOINTS PARAMS AND RESPONSE**
 
-> _api/auth/login_
+`Endpoint:` _http://domain.com/api/auth/login_
+
+`Method:` **POST**
+
+`Payload:`
 
 ```json
 {
@@ -41,12 +45,14 @@ composer update
 }
 ```
 
+`Endpoint:` _http://domain.com/api/auth/logout_
 
+`Method:` **POST**
 
-> _api/auth/logout_
+`Payload:`
 
 ```
-  send the token JWT in the headers
+  Authorization: JWT token here
 ```
 
 #### Response
@@ -61,11 +67,71 @@ composer update
 or
 
 ```json
-{ 
-    "status": "true", 
-    "message": "Deslogueado correctamente." 
+{
+    "status": "true",
+    "message": "Deslogueado correctamente."
 }
 ```
+
+`Endpoint:` _http://domain.com/api/auth/meAccount_
+
+`Method:` **POST**
+
+`Payload:`
+
+```
+  Authorization: JWT token here
+```
+
+#### Response
+
+```json
+{
+    "user": {}
+}
+```
+
+or
+
+```json
+{
+    "status": "false",
+    "message": "token inválido"
+}
+```
+
+`Endpoint:` _http://domain.com/api/auth/refresh_
+
+`Method:` **POST**
+
+`Payload:`
+
+```
+  Authorization: JWT token here
+```
+
+#### Response
+
+```json
+{
+    "status": "true",
+    "message": "Datos del usuario logueado.",
+    "access_token": "",
+    "token_type": "bearer",
+    "expires_in": 3600,
+    "user": {}
+}
+```
+
+or
+
+```json
+{
+    "status": "false",
+    "message": "token inválido"
+}
+```
+
 ---
 
 ### **AUTHOR**
