@@ -2,7 +2,6 @@
 
 namespace App\Http\Middleware;
 use JWTAuth;
-
 use Closure;
 
 class JWT
