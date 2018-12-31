@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use JWTAuth;
 
 class AuthController extends Controller
 {
