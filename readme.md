@@ -23,7 +23,7 @@ php artisan serve
 
 ---
 
-### **ENDPOINTS OF THE API**
+### **END POINTS OF THE API**
 
 1. http://domain.com/api/auth/login
 2. http://domain.com/api/auth/logout
@@ -32,9 +32,9 @@ php artisan serve
 
 ---
 
-### **PAYLOAD AND RESPONSE OF THE ENDPOINTS**
+### **PAYLOAD AND RESPONSE OF THE END POINTS**
 
-`Endpoint:` _http://domain.com/api/auth/login_
+`End point:` _http://domain.com/api/auth/login_
 
 `Method:` **POST**
 
@@ -60,7 +60,7 @@ php artisan serve
 }
 ```
 
-`Endpoint:` _http://domain.com/api/auth/logout_
+`End point:` _http://domain.com/api/auth/logout_
 
 `Method:` **POST**
 
@@ -88,7 +88,7 @@ or
 }
 ```
 
-`Endpoint:` _http://domain.com/api/auth/meAccount_
+`End point:` _http://domain.com/api/auth/meAccount_
 
 `Method:` **POST**
 
@@ -115,7 +115,7 @@ or
 }
 ```
 
-`Endpoint:` _http://domain.com/api/auth/refresh_
+`End point:` _http://domain.com/api/auth/refresh_
 
 `Method:` **POST**
 
