@@ -42,8 +42,8 @@ php artisan serve
 
 ```json
 {
-    "email": "admin@domain.com",
-    "password": "1234567"
+    "email": "admin@rdcr.com",
+    "password": "prueba123"
 }
 ```
 
@@ -56,7 +56,7 @@ php artisan serve
     "access_token": "",
     "token_type": "bearer",
     "expires_in": 3600,
-    "user": {}
+    "user": {} // User information
 }
 ```
 
@@ -149,6 +149,4 @@ or
 
 ---
 
-### **AUTHOR**
-
-> [_Rubén Carrascal_](https://gitlab.com/krrskl97/)
+Hecho con ❤️ por [Rubén Carrascal](https://krrskl.github.io/)
